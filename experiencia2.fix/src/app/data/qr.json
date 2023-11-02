@@ -1,0 +1,41 @@
+{
+  "Docentes": [
+    {
+      "id": 1,
+      "seccion": "PGY0000",
+      "nombredocente": "maxi",
+      "carrera1": "alf",
+      "carrera2": "no"
+    },
+    {
+      "seccion": "PGY1254",
+      "nombredocente": "luis martinez",
+      "carrera1": "ingeniero automotriz",
+      "carrera2": "no",
+      "id": 2
+    },
+    {
+      "seccion": "PGY5587",
+      "nombredocente": "sus",
+      "carrera1": "programador ",
+      "carrera2": "no",
+      "id": 3
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "username":"Maxi",
+      "password":"12345678",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "username":"profe",
+      "password":"duocmaipu",
+      "role": "usuario",
+      "isactive": true
+    }
+  ]
+}

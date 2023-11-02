@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>dettalles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>ID #{{docente.id}}</ion-card-subtitle>
+      <ion-card-title>Seccion:{{docente.seccion}} </ion-card-title>
+      <ion-card-title>Nombre:{{docente.nombredocente}} </ion-card-title>
+    </ion-card-header>
+    <img src="assets/Fi-codigos-QR.png" class="ion-padding imagen">
+    <ion-card-content>
+      <span>Carrera1:{{docente.carrera1}} </span>
+      <p>
+      <span>Carrera2:{{docente.carrera2}} </span>
+      </p> 
+    </ion-card-content>
+    <ion-button [routerLink]="['/actualizar', docente.id]"color="warning"> 
+      <ion-icon name="create"></ion-icon> </ion-button>
+    <ion-button [routerLink]="['/eliminar', docente.id]"color="danger"> 
+      <ion-icon name="trash"></ion-icon> </ion-button>
+  </ion-card>
+</ion-content>

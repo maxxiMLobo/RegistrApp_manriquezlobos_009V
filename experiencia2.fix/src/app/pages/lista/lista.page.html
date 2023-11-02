@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-toolbar>
+    <ion-title>Secciones</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/agregar']">Agregar seccion        
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let d of docentes; let i=index" [routerLink]="['/detalles', d.id]"> <!--url/docentes/id-->>
+      <ion-label> {{d['seccion']}} &nbsp; {{d['nombredocente']}}</ion-label>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>

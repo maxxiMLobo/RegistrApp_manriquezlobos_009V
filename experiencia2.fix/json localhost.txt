@@ -1,0 +1,17 @@
+MyQrFix
+
+data server: http://localhost:3301
+json-server --watch qr.json --host 0.0.0.0 --port 3301
+
+  apiURL: "http://localhost:3301"
+-*---------------------------
+
+
+      "id": 1,
+      "username":"Maxi",
+      "password":"12345678",
+
+ 
+      "id": 2,
+      "username":"profe",
+      "password":"duocmaipu",

@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>AGREGAR </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/lista']">Atras
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" name="txNombre" [(ngModel)]="newDocente.nombredocente" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Seccion</ion-label>
+      <ion-input type="text" name="txSeccion" [(ngModel)]="newDocente.seccion" placeholder="PGY..." required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Carrera:</ion-label>
+      <ion-input type="text" name="txCarr1" [(ngModel)]="newDocente.carrera1" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Carrera2:</ion-label>
+      <ion-input type="text" name="txCarr2" [(ngModel)]="newDocente.carrera2" placeholder="opcional" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="crearDocente()" expand="block" color="success">Ingresar</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+  
+</ion-content>
