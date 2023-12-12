@@ -1,0 +1,12 @@
+json-server --watch data.json --host 0.0.0.0 --port 3300
+
+apiUrl: 'http://localhost:3300'
+
+
+
+descarga android estudio giraffe
+
+
+**en android local.properties pon  
+sdk.dir=C\:\\Users\\user\\AppData\\Local\\Android\\sdk
+**depende de el nombre del pc.
